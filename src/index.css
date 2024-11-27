@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .question-card {
+    @apply bg-white rounded-xl shadow-lg p-8 mb-8 animate-scale-in;
+  }
+  
+  .rating-button {
+    @apply w-12 h-12 rounded-full flex items-center justify-center text-lg font-semibold 
+           transition-all duration-200 ease-in-out;
+  }
+
+  .rating-button-active {
+    @apply bg-primary text-white transform scale-110;
+  }
+
+  .rating-button-inactive {
+    @apply bg-secondary hover:bg-primary/10;
+  }
+
+  .nav-button {
+    @apply px-6 py-2 rounded-lg font-semibold transition-all duration-200
+           hover:bg-primary hover:text-white transform hover:scale-105;
+  }
+}
